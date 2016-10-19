@@ -139,7 +139,7 @@ static CGFloat titleHeight = 35;
  */
 -(void)creatButtonView:(BOOL)ishaveTitle OtherButtonTitleArrary:(NSArray *)otherButtonTitleArrary{
     for (int i = 0; i < otherButtonTitleArrary.count; i++) {
-        UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(10, ishaveTitle?46:0 +i*(buttonHeight + 1), DEF_Screen_Withd - 20, buttonHeight)];
+        UIButton * button = [[UIButton alloc]initWithFrame:CGRectMake(10, (ishaveTitle?46:0) +i*(buttonHeight + 1), DEF_Screen_Withd - 20, buttonHeight)];
         button.layer.cornerRadius = 5;
         button.layer.masksToBounds = YES;
         button.backgroundColor = [UIColor whiteColor];
